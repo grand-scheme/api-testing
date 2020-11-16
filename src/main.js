@@ -21,12 +21,11 @@ $(document).ready(function() {
     request.open("GET", urlRetrieved, true);
     request.send();
 
-    // function getElements(response) {
+    function getElements(response) {
 
-    //   $('.text-one').html(`<img src="${response.data[0].images.fixed_height.url}" width="${response.data[0].images.fixed_height.width}" height="${response.data[0].images.fixed_height.height}">`);
-    //   // $('.showHumidity').text(`The humidity in ${city} is ${response.main.humidity}%`); 
-    //   $('.text-two').text(`SOME STUFF GOES HERE... TOO.`);
-    //   $('.text-THREE').text(`SOME STUFF GOES HERE... maybe.`);
-    // }
+      $('.text-one').html(`<img src="${response.data[0].images.fixed_height.url}" width="${response.data[0].images.fixed_height.width}" height="${response.data[0].images.fixed_height.height}"> (test one)`);
+      $('.text-two').html(`<img src="${response.data[1].images.fixed_height.url}" width="${response.data[1].images.fixed_height.width}" height="${response.data[1].images.fixed_height.height}"> (test two)`);
+
+    }
   });
 });
